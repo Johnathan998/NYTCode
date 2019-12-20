@@ -4,5 +4,11 @@ $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function (reponse) {
+    $("run-search").click(function () {
 
+        var searchTerm = $("#search-term").val().trim();
+        var startYear = $("start-year").val().trim();
+        var endYear = $("end-year").val().trim();
+        console.log(this);
+    })
 })
